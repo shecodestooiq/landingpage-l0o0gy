@@ -1,0 +1,98 @@
+*{
+    margin:0;
+}
+body{
+    background-color: hwb(300 12% 53% / 0.336);
+  }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #74469269;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+}
+.dropbtn {
+    background-color: #2124230a;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+  }
+  /* search and help by w3school */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f4f8f8af;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(102, 231, 231, 0.603);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #b221f541;}
+.dropdown:hover .dropdown-content {display: block;} 
+.dropdown:hover .dropbtn {background-color: #3a0a708e;}
+#Search{
+    margin:10px;
+    border-radius: 20px;
+    border-color: none;
+    background-color: hsla(0, 0%, 100%, 0.137);   
+    width: 30%;
+    box-sizing: border-box;
+    border: 3px solid hsla(170, 47%, 45%, 0.897);
+    font-size: 16px;
+    background-image: url('https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png');
+    background-size: 30px;
+    background-position: 7px 5px; 
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+} 
+.card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;  
+}
+.child{
+border: solid 1px black;
+padding: 20px;
+margin: 4px;
+border-radius: 5px;
+box-shadow: 2px 5px 2px rgba(2, 10, 110, 0.507);
+background-color:white;
+
+}
+#img{
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 767px) {
+    .card{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns:1fr;   
+     }
+}
+footer{
+  margin-top: 20px;
+  background-color: rgba(179, 114, 199, 0.233); 
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+
+}

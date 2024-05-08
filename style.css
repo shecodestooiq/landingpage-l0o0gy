@@ -1,5 +1,5 @@
 *{
-    margin:0;
+  margin:0;
 }
 body{
     background-color: hwb(300 12% 53% / 0.336);
@@ -8,9 +8,7 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: #74469269;
-    padding-top: 30px;
-    padding-bottom: 30px;
-   
+    padding: 10px ;
 }
 .dropbtn {
     background-color: #2124230a;
@@ -60,39 +58,64 @@ body{
     background-blend-mode:darken;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
-} 
-.card{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 100px;  
 }
-.child{
-border: solid 1px black;
+.project-contanier{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 90px;
+}
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.main-container .card-container{
+  flex:1;
+  margin: 20px 20px;
+  background-color: rgb(231, 201, 201);
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+}
+.main-container .card-container img {
+width: 200px;
+height: 200px;
 padding: 20px;
-margin: 4px;
-border-radius: 5px;
-box-shadow: 2px 5px 2px rgba(2, 10, 110, 0.507);
-background-color:white;
+}
+.main-container .card-container h1{
+  margin: 15px 0px;
+  font-size: 28px;
+  color:#1662;
+  font-family: sans-serif;
+}
+.main-container .card-container p{
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0px 10px;
+  margin: 20px;
+  font-family: sans-serif;
+}
+@media screen and (max-width:824px) and (min-width:700px){
+  .main-container{
+    grid-template-columns: repeat(2,1fr);
+  }
 
 }
-#img{
-    width: 200px;
-    height: 200px;
-}
-
-@media screen and (max-width: 767px) {
-    .card{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns:1fr;   
-     }
+@media screen and (max-width: 690px) {
+  .main-container{
+    display: flex;
+      flex-direction: column;
+    }
 }
 footer{
-  margin-top: 20px;
+  font-size: 20px;
   background-color: rgba(179, 114, 199, 0.233); 
-  display: flex; 
-  flex-direction: row;
-  justify-content: space-around;
-
+ text-align: center;
+ color: #000000;
+ text-decoration: none;
+ padding: 20px;
 }
